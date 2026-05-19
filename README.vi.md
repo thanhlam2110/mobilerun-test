@@ -88,32 +88,6 @@ Cách tách module như vậy giúp xác định lỗi đến từ Android setup
 
 ---
 
-## Lưu ý bảo mật
-
-Không commit API key thật, token, credentials hoặc file cấu hình riêng tư.
-
-Trong file ví dụ, chỉ dùng placeholder, ví dụ:
-
-```env
-OPENAI_API_KEY=REPLACE_WITH_YOUR_OPENAI_API_KEY
-```
-
-Các file và thư mục nên ignore:
-
-```gitignore
-.env
-*.env
-!.env.example
-.venv/
-__pycache__/
-trajectories/
-*.log
-```
-
-Nếu lỡ commit API key thật, hãy revoke hoặc rotate key ngay lập tức trước khi push repository.
-
----
-
 ## Tài liệu
 
 Mỗi submodule có README riêng với hướng dẫn setup chi tiết:

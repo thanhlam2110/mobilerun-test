@@ -88,32 +88,6 @@ This separation helps identify whether a failure is caused by the Android setup,
 
 ---
 
-## Security note
-
-Do not commit real API keys, tokens, credentials, or private configuration files.
-
-Use placeholder values in example files, for example:
-
-```env
-OPENAI_API_KEY=REPLACE_WITH_YOUR_OPENAI_API_KEY
-```
-
-Recommended files and folders to ignore include:
-
-```gitignore
-.env
-*.env
-!.env.example
-.venv/
-__pycache__/
-trajectories/
-*.log
-```
-
-If a real API key is accidentally committed, revoke or rotate it immediately before pushing the repository.
-
----
-
 ## Documentation
 
 Each submodule contains its own README with detailed setup instructions:
