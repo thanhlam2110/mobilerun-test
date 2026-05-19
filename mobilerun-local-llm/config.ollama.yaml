@@ -1,22 +1,22 @@
 agent:
   name: mobilerun
   max_steps: 20
-  reasoning: true
+  reasoning: false
   streaming: true
   after_sleep_action: 1.0
   wait_for_stable_ui: 0.5
   use_normalized_coordinates: false
 
   fast_agent:
-    vision: true
-    parallel_tools: true
+    vision: false
+    parallel_tools: false
 
   manager:
-    vision: true
-    stateless: true
+    vision: false
+    stateless: false
 
   executor:
-    vision: true
+    vision: false
 
   app_cards:
     enabled: true

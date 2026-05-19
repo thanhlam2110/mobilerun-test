@@ -179,7 +179,15 @@ async def run_goal(args: argparse.Namespace) -> int:
 
     config = MobileConfig.from_yaml(str(config_path))
     config = patch_config(config, args)
-
+    print("\n========== Runtime MobileRun Config ==========")
+    print("max_steps:", config.agent.max_steps)
+    print("reasoning:", config.agent.reasoning)
+    print("manager vision:", config.agent.manager.vision)
+    print("executor vision:", config.agent.executor.vision)
+    print("fast_agent vision:", config.agent.fast_agent.vision)
+    print("debug:", config.logging.debug)
+    print("save_trajectory:", config.logging.save_trajectory)
+    print("=============================================\n")
     agent = MobileAgent(
         goal=args.goal,
         config=config,
